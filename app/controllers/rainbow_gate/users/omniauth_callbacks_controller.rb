@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class PluginAuthentication::Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+class RainbowGate::Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
@@ -11,8 +11,7 @@ class PluginAuthentication::Users::OmniauthCallbacksController < Devise::Omniaut
   # skip_before_action :verify_authenticity_token
 
   def google_oauth2
-    binding.pry
-    user = PluginAuthentication::User.from_omniauth(auth)
+    user = RainbowGate::User.from_omniauth(auth)
 
     if user.present?
       sign_out_all_scopes
