@@ -13,6 +13,14 @@ class RainbowGate::Users::SessionsController < Devise::SessionsController
   #   super
   # end
 
+  def after_sign_out_path_for(_resources_or_scope)
+    main_app.root_path
+  end
+
+  def after_sign_in_path_for(resources_or_scope)
+    stored_location_for(resources_or_scope) || main_app.root_path
+  end
+
   # DELETE /resource/sign_out
   # def destroy
   #   super
