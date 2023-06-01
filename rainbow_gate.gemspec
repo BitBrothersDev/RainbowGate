@@ -24,4 +24,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", ">= 7.0.5"
   spec.add_dependency "devise", ">= 4.9.2"
+  spec.add_dependency "letter_opener", ">= 1.8.1"
 end
