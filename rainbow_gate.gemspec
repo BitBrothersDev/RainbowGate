@@ -25,4 +25,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "rails", ">= 7.0.5"
   spec.add_dependency "devise", ">= 4.9.2"
   spec.add_dependency "letter_opener", ">= 1.8.1"
+  spec.add_dependency "omniauth", '>= 2.1.1'
+  spec.add_dependency "omniauth-google-oauth2", '>= 1.1.1'
+  spec.add_dependency "omniauth-rails_csrf_protection", '>= 1.0.1'
+  spec.add_dependency "dotenv-rails"
 end
