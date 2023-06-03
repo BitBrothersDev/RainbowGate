@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount RainbowGate::Engine => "/rainbow_gate"
+  mount RainbowGate::Engine => "/"
 end
