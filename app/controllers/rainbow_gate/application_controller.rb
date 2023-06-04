@@ -1,5 +1,5 @@
 module RainbowGate
-  class ApplicationController < ActionController::Base
+  class ApplicationController < ApplicationController
     before_action :authenticate_user!
     def after_sign_in_path_for(resource)
       main_app.root_path
