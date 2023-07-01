@@ -25,3 +25,4 @@ gem 'omniauth-rails_csrf_protection'
 
 gem "dotenv-rails"
 gem "bootstrap"
+gem "activerecord-session_store"

@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_dependency "omniauth-rails_csrf_protection", '>= 1.0.1'
   spec.add_dependency "dotenv-rails"
   spec.add_dependency "bootstrap", "~> 5.3.0.alpha3"
+  spec.add_dependency "activerecord-session_store"
 end

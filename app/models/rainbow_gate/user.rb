@@ -1,5 +1,8 @@
 module RainbowGate
   class User < ApplicationRecord
+    include RainbowStride::UserExtension
+    include RainbowVital::UserExtension
+
     self.table_name = 'users'
     # Include default devise modules. Others available are:
     # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
